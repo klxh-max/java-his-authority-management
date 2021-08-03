@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+    <!--人为规定使用<mvc-interceptor class="util.AuthInterceptor">
+    告诉框架在处理请求执行/在调用controller方法之前，有一个切面（拦截器）对象需要执行
+    切面不一定在所有的请求前处理
+    人为规定两个子标签
+        <include></include>指定在哪些请求前处理
+        <exclude></exclude>指定不在哪些请求前处理
+        如果两个子标签都不存在，表示所有请求前都要处理
+    -->
+    <mvc-interceptor class="util.AuthInterceptor">
+
+    </mvc-interceptor>
+
+<!--    <mvc-interceptor class="util.TestInterceptor">-->
+<!--        <exclude>/test1,/test2</exclude>-->
+<!--    </mvc-interceptor>-->
+</mvc>
